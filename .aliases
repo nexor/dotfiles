@@ -1,0 +1,13 @@
+alias s='git status'
+alias d='git diff .'
+alias b='git branch'
+alias go='git checkout'
+
+alias sft='php bin/phpunit -c app'
+alias sfd='php app/console  doctrine:schema:update --dump-sql'
+alias sfdf='php app/console doctrine:schema:update --force'
+alias cap='bundle exec cap'
+
+alias compile-ssh-config='echo -n > ~/.ssh/config-compilation && cat ~/.ssh/config_* > ~/.ssh/config-compilation'
+alias ssh='compile-ssh-config && ssh -F ~/.ssh/config-compilation'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
